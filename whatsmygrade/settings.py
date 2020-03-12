@@ -25,7 +25,7 @@ SECRET_KEY = 'xfi4dbc$*h9!g*2(of8-9^h$xhd%wm$^!1xv@@2a7i@4zakfod'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'whatsmygrade-ms.herokuapp.com']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'student_view',
+    'instructor_view',
 ]
 
 MIDDLEWARE = [
